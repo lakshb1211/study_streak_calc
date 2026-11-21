@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Study Streak</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Decorative study doodles (hand-drawn style SVGs, hidden on small screens) -->
+  <div class="decor" aria-hidden="true">
+    <svg class="notebook" viewBox="0 0 200 260">
+      <rect class="blue" x="30" y="10" width="140" height="230" rx="10"/>
+      <rect class="white" x="55" y="50" width="90" height="56" rx="4"/>
+      <path d="M68 70h64M68 86h40"/>
+      <path d="M62 160h76M62 180h76M62 200h50"/>
+      <rect class="white" x="16" y="34" width="30" height="9" rx="4.5"/><rect class="white" x="16" y="74" width="30" height="9" rx="4.5"/>
+      <rect class="white" x="16" y="114" width="30" height="9" rx="4.5"/><rect class="white" x="16" y="154" width="30" height="9" rx="4.5"/>
+      <rect class="white" x="16" y="194" width="30" height="9" rx="4.5"/>
+    </svg>
+    <svg class="pencil" viewBox="0 0 270 40">
+      <rect class="yellow" x="40" y="8" width="170" height="24"/>
+      <path d="M40 16h170M40 24h170"/>
+      <polygon class="sand" points="40,8 6,20 40,32"/>
+      <polygon class="ink" points="6,20 17,15.5 17,24.5"/>
+      <rect class="grey" x="210" y="8" width="22" height="24"/>
+      <rect class="pink" x="232" y="8" width="26" height="24" rx="8"/>
+    </svg>
+    <svg class="books" viewBox="0 0 240 150">
+      <rect class="green" x="10" y="104" width="220" height="36" rx="4"/><path d="M40 104v36M50 104v36"/>
+      <rect class="blue" x="28" y="66" width="190" height="38" rx="4"/><path d="M190 66v38M200 66v38"/>
+      <rect class="pink" x="18" y="28" width="196" height="38" rx="4"/><path d="M50 28v38M60 28v38"/>
+    </svg>
+    <svg class="paper" viewBox="0 0 180 230">
+      <path class="white" d="M10 10H130L170 50V220H10Z"/>
+      <path class="sand" d="M130 10V50H170Z"/>
+      <path d="M30 80h110M30 104h110M30 128h80"/>
+      <rect x="30" y="156" width="14" height="14" rx="2"/><path d="M33 163l4 4 7-9M58 163h80"/>
+      <rect x="30" y="184" width="14" height="14" rx="2"/><path d="M58 191h60"/>
+    </svg>
+    <svg class="sticky" viewBox="0 0 110 110">
+      <path class="yellow" d="M8 8H102V80L78 104H8Z"/><path class="sand" d="M78 104V80H102Z"/>
+      <path d="M24 34h60M24 52h48M24 70h34"/>
+    </svg>
+    <svg class="mug" viewBox="0 0 110 130">
+      <path d="M38 8c-8 10 8 14 0 24M58 8c-8 10 8 14 0 24"/>
+      <rect class="pink" x="14" y="44" width="68" height="72" rx="10"/>
+      <path d="M82 60h8a14 14 0 0 1 0 34h-8"/>
+      <path d="M28 70h40"/>
+    </svg>
+    <svg class="globe" viewBox="0 0 110 140">
+      <circle class="blue" cx="55" cy="55" r="42"/>
+      <path class="green" d="M35 35c8-6 14 0 12 8s-10 6-14 2z"/><path class="green" d="M62 58c8-4 14 4 10 12s-12 4-12-2z"/>
+      <ellipse cx="55" cy="55" rx="18" ry="42"/><path d="M13 55h84M20 33h70M20 77h70"/>
+      <path d="M22 92c10 22 56 22 66 0M55 100v20M33 126h44"/>
+    </svg>
+    <svg class="clock" viewBox="0 0 110 112">
+      <circle class="pink" cx="22" cy="18" r="12"/><circle class="pink" cx="88" cy="18" r="12"/>
+      <circle class="white" cx="55" cy="58" r="42"/>
+      <path d="M55 22v6M55 88v6M17 58h6M87 58h6M55 58V36M55 58l16 9M32 100l-8 8M78 100l8 8"/>
+      <circle class="ink" cx="55" cy="58" r="3"/>
+    </svg>
+    <svg class="calculator" viewBox="0 0 100 140">
+      <rect class="grey" x="10" y="6" width="80" height="128" rx="10"/>
+      <rect class="white" x="22" y="18" width="56" height="28" rx="4"/><path d="M50 34h20"/>
+      <rect class="white" x="22" y="58" width="14" height="12" rx="3"/><rect class="white" x="43" y="58" width="14" height="12" rx="3"/><rect class="white" x="64" y="58" width="14" height="12" rx="3"/><rect class="white" x="22" y="76" width="14" height="12" rx="3"/><rect class="white" x="43" y="76" width="14" height="12" rx="3"/><rect class="white" x="64" y="76" width="14" height="12" rx="3"/><rect class="white" x="22" y="94" width="14" height="12" rx="3"/><rect class="white" x="43" y="94" width="14" height="12" rx="3"/><rect class="white" x="64" y="94" width="14" height="12" rx="3"/><rect class="white" x="22" y="112" width="14" height="12" rx="3"/><rect class="white" x="43" y="112" width="14" height="12" rx="3"/><rect class="pink" x="64" y="112" width="14" height="12" rx="3"/>
+    </svg>
+    <svg class="ruler" viewBox="0 0 40 260">
+      <rect class="yellow" x="6" y="6" width="28" height="248" rx="3"/>
+      <path d="M6 14h14M6 30h8M6 46h8M6 62h8M6 78h8M6 94h14M6 110h8M6 126h8M6 142h8M6 158h8M6 174h14M6 190h8M6 206h8M6 222h8M6 238h8"/>
+    </svg>
+  </div>
+  <main>
+    <header>
+      <h1>Study Streak</h1>
+      <p>Log what you studied today. Keep the chain going.</p>
+    </header>
+
+    <section class="streak" aria-label="Current streak">
+      <p class="streak-count"><span id="streak">0</span> day streak</p>
+      <p class="best">Best: <span id="best">0</span> days</p>
+      <div id="chain" class="chain" aria-label="Last 14 days"></div>
+    </section>
+
+    <section aria-labelledby="log-h">
+      <h2 id="log-h">Log a session</h2>
+      <div class="row">
+        <label>Subject <input id="subject" type="text" placeholder="e.g. Python" maxlength="40"></label>
+        <label>Minutes <input id="minutes" type="number" min="1" max="720" value="30"></label>
+        <button id="add" type="button">Add session</button>
+      </div>
+      <p id="msg" class="msg" role="status"></p>
+    </section>
+
+    <section aria-labelledby="week-h">
+      <h2 id="week-h">This week (minutes per day)</h2>
+      <div id="chart" class="chart"></div>
+    </section>
+
+    <section aria-labelledby="hist-h">
+      <h2 id="hist-h">History</h2>
+      <ul id="history" class="history"></ul>
+    </section>
+
+      <!-- TODO (Issue #1): add a dark mode toggle. Colours are already CSS variables in style.css -->
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
